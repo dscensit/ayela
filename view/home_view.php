@@ -1,64 +1,3 @@
-<!doctype html>
-<html lang="fr-FR">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <link rel="manifest" href="manifest.json">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#6a8be0">
-    <meta name="msapplication-TileColor" content="#6a8be0">
-    <meta name="msapplication-TileImage" content="img/favicon/Icon-144.png">
-    <meta name="author" content="DSC ENSIT"/>
-    <meta name="title" content="AYELA">
-    <meta name="keywords" content="ayela,catre d'identité, perte de document, permis de conduite,carte cni,  dsc ensit, developer student clubs, ensit ci, DSC sub saharan africa, communauté d'étudiant, communauté google côte d'ivoire"/>
-    <meta name="description" content="Service gratuit pour retrouver un document perdu. Que vous ayez perdu votre Attestation, votre CNI, votre Passeport et votre Assurance.">
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="AYELA" />
-    <meta property="og:description" content="Service gratuit pour retrouver document perdu. Que vous ayez perdu votre Attestation, votre CNI, votre Passeport et votre Assurance." />
-    <meta property="og:url" content="https://ayela-81f9a.web.app" />
-    <meta property="og:site_name" content="DSC ENSIT" />
-    <meta property="og:image" content="https://ayela-81f9a.web.app/img/AYELA_Logo.png" />
-    <meta property="og:image:secure_url" content="https://ayela-81f9a.web.app/img/AYELA_Logo.png" />
-    <meta property="og:image:width" content="567" />
-    <meta property="og:image:height" content="567" />
-    <link rel="canonical" href="https://ayela-81f9a.web.app"/>
-    <link rel="shortcut icon" href="img/AYELA.ico" type="image/x-icon" />
-   <link rel="icon" href="img/AYELA_Logo.png" type="image/png" />
-
-    <title>Acceuil | AYELA Service</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/Icon-57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/Icon-60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/Icon-72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/Icon-76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/Icon-114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/Icon-120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/Icon-144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/Icon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/Icon-180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/Icon-192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/Icon-32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/Icon-96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/Icon-16.png">
-    <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" media="all" href="vendor/bootstrap/css/bootstrap.min.css">
-
-    <!-- Vendor/Plugins CSS -->
-    <link type="text/css" rel="stylesheet" media="all" href="vendor/animate-css/animate.min.css">
-    <link type="text/css" rel="stylesheet" media="all" href="vendor/slick/slick.css">
-    <link type="text/css" rel="stylesheet" media="all" href="vendor/slick/slick-theme.css">
-    <link type="text/css" rel="stylesheet" media="all" href="vendor/magnific-popup/magnific-popup.css">
-    <link type="text/css" rel="stylesheet" media="all"
-          href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600,700&display=swap">
-    <link type="text/css" rel="stylesheet" media="all"
-          href="vendor/material-design-iconic-font/css/material-design-iconic-font.min.css">
-    <link type="text/css" rel="stylesheet" media="all" href="fonts/flaticon/flaticon.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <link type="text/css" rel="stylesheet" media="all" href="css/main.css">
-</head>
 <body id="page-top">
 
     <!-- START Loader -->
@@ -74,15 +13,13 @@
         </div>
     </div>
     <!-- END Loader -->
-
-    <!-- START Header -->
-    <header class="header position-relative">
+     <header class="header position-relative">
         <!-- START Navigation -->
         <div class="navigation-bar" id="affix">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light navbar-reset">
                     <a class="logo" href="index.html">
-                        <img class="logo-default" src="img/AYELA_Logo.png" alt="Bootbox">
+                        <img class="logo-default" src="assets/img/AYELA_Logo.png" alt="Bootbox">
                     </a>
                     <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse"
                         data-target="#theme-navbar" aria-controls="theme-navbar" aria-expanded="false"
@@ -92,20 +29,18 @@
                     <div class="collapse navbar-collapse" id="theme-navbar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Acceuil</a>
+                                <a class="nav-link" href="home">Acceuil</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="annonce.html">Annonce</a>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="annonce">Annonce</a>
                             </li>
+                           
                             <li class="nav-item">
-                                <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="document">document</a>
                             </li>
                         </ul>
                         <div class="my-3 my-lg-0">
-                            <a href="login.html" class="btn btn-custom">Connexion</a>
+                            <a href="login" class="btn btn-custom">Connexion</a>
                         </div>
                     </div>
                 </nav>
@@ -113,8 +48,6 @@
         </div>
         <!-- END Navigation -->
     </header>
-    <!-- END Header -->
-
     <!-- START Section Hero -->
     <section class="section-hero">
         <div class="banner position-relative">
@@ -125,13 +58,13 @@
                             <h1 class="c-white mb-3 mb-md-4">Grow Your Business Make More Money</h1>
                             <p class="c-white"> Quis autem vel eum iure reprehenderit qui in ea voluptate velit
                                 esse quam nihil aenean socada commodo molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla.</p>
-                            <a href="perdu.html" class="btn btn-lg btn-custom btn-light mt-4">Document perdu</a>
-                            <a href="retrouve.html" class="btn btn-lg btn-custom btn-light mt-4 a-doc-trouve-bouton">Document trouvé</a>
+                            <a href="perdu" class="btn btn-lg btn-custom btn-light mt-4">Document perdu</a>
+                            <a href="find" class="btn btn-lg btn-custom btn-light mt-4 a-doc-trouve-bouton">Document trouvé</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-none d-lg-block wow zoomIn" data-wow-delay="0.4s">
                         <div class="banner-img">
-                            <img src="img/home/banner-vector.png" alt="business">
+                            <img src="assets/img/home/banner-vector.png" alt="business">
                         </div>
                     </div>
                 </div>
@@ -163,28 +96,28 @@
             <div class="clients">
                 <div class="client-slider" id="client-slider">
                     <div class="item">
-                        <img src="img/client/client-1.png" alt="clients">
+                        <img src="assets/img/client/client-1.png" alt="clients">
                     </div>
                     <div class="item">
-                        <img src="img/client/client-2.png" alt="clients">
+                        <img src="assets/img/client/client-2.png" alt="clients">
                     </div>
                     <div class="item">
-                        <img src="img/client/client-3.png" alt="clients">
+                        <img src="assets/img/client/client-3.png" alt="clients">
                     </div>
                     <div class="item">
-                        <img src="img/client/client-4.png" alt="clients">
+                        <img src="assets/img/client/client-4.png" alt="clients">
                     </div>
                     <div class="item">
-                        <img src="img/client/client-1.png" alt="clients">
+                        <img src="assets/img/client/client-1.png" alt="clients">
                     </div>
                     <div class="item">
-                        <img src="img/client/client-2.png" alt="clients">
+                        <img src="assets/img/client/client-2.png" alt="clients">
                     </div>
                     <div class="item">
-                        <img src="img/client/client-3.png" alt="clients">
+                        <img src="assets/img/client/client-3.png" alt="clients">
                     </div>
                     <div class="item">
-                        <img src="img/client/client-4.png" alt="clients">
+                        <img src="assets/img/client/client-4.png" alt="clients">
                     </div>
                 </div>
             </div>
@@ -201,7 +134,7 @@
                     <a href="#" class="btn btn-custom mt-4">Read more</a>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block order-lg-first">
-                    <img src="img/pages/about-img2.png" class="img-fluid pr-lg-4" alt="Business">
+                    <img src="assets/img/pages/about-img2.png" class="img-fluid pr-lg-4" alt="Business">
                 </div>
             </div>
         </div>
@@ -372,7 +305,7 @@
                                 <a href="#" class="zmdi zmdi-instagram"></a>
                             </span>
                             <span class="img-holder d-inline-block">
-                                <img src="img/team/team_1.jpg" alt="Team">
+                                <img src="assets/img/team/team_1.jpg" alt="Team">
                             </span>
                         </div>
                         <div class="team-content">
@@ -391,7 +324,7 @@
                                 <a href="#" class="zmdi zmdi-instagram"></a>
                             </span>
                             <span class="img-holder d-inline-block">
-                                <img src="img/team/team_2.jpg" alt="Team">
+                                <img src="assets/img/team/team_2.jpg" alt="Team">
                             </span>
                         </div>
                         <div class="team-content">
@@ -410,7 +343,7 @@
                                 <a href="#" class="zmdi zmdi-instagram"></a>
                             </span>
                             <span class="img-holder d-inline-block">
-                                <img src="img/team/team_3.jpg" alt="Team">
+                                <img src="assets/img/team/team_3.jpg" alt="Team">
                             </span>
                         </div>
                         <div class="team-content">
@@ -512,67 +445,7 @@
     </section>
     <!-- END Section CTA -->
 
-    <!-- START Footer -->
-    <footer class="bg-white footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="row">
-                    <div class="col-md-6 col-xl-3 mb-30">
-                        <div class="mb-30">
-                            <img class="logo-footer" src="img/AYELA_Logo.png" alt="Bootbox">
-                        </div>
-                        <p class="mb-30 c-white">Service gratuit pour retrouver document perdu. Que vous ayez perdu votre Attestation, votre CNI, votre PassePort, votre Assurance...</p>
-                        <div class="socials">
-                            <a href="#" class="zmdi zmdi-facebook"></a>
-                            <a href="#" class="zmdi zmdi-twitter"></a>
-                            <a href="#" class="zmdi zmdi-google"></a>
-                            <a href="#" class="zmdi zmdi-instagram"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 mb-30">
-                        <h4 class="btm-sep pb-3 mb-30 c-white font-weight-semi-bolder">Notre compagnie</h4>
-                        <div class="foot-links">
-                            <a href="https://dsc-ensit.web.app/">À propos</a>
-                            <a class="nav-link" href="annonce.html">Annonce</a>
-                            <a href="https://dsc-ensit.web.app/">Notre blog</a>
-                            <a href="faq.html">FAQ</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 mb-30">
-                        <h4 class="btm-sep pb-3 mb-30 c-white font-weight-semi-bolder">Programmes</h4>
-                        <div class="foot-links">
-                            <a href="https://www.womentechmakers.com/" target="_blank" rel="noreferrer" aria-label="Women Techmakers">Women Techmakers</a>
-                            <a href="https://developers.google.com/experts/" target="_blank" rel="noreferrer" aria-label="Google Developer Experts">Google Developer Experts</a>
-                            <a href="https://developers.google.com/programs/community/" target="_blank" rel="noreferrer" aria-label="Google Developer Groups">Google Developer Groups</a>
-                            <a href="https://developers.google.com/community/launchpad/" target="_blank" rel="noreferrer" aria-label="Launchpad">Launchpad</a>
-                            <a href="https://developers.google.com/community/dsc/" target="_blank" rel="noreferrer" aria-label="Developer Student Clubs">Developer Student Clubs</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 mb-30">
-                        <h4 class="btm-sep pb-3 mb-30 c-white font-weight-semi-bolder">Contactez-nous</h4>
-                        <ul class="contact-info mt-4">
-                            <li>
-                                <i class="zmdi zmdi-pin"></i>
-                                Cocody, <br> Farandole 2 Plateaux
-                            </li>
-                            <li>
-                                <i class="zmdi zmdi-email"></i>
-                                dscensit@gmail.com
-                            </li>
-                            <li>
-                                <i class="zmdi zmdi-phone"></i>
-                                +225 00 00 00 00
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright text-center c-white">
-                ©2019 - AYELA. <span class="d-none d-md-inline-block">Tous les droits sont réservés.</span>
-            </div>
-        </div>
-    </footer>
-    <!-- END Footer -->
+   
 
     <!-- START Scroll-To-Top -->
     <a id="back-top" class="back-top" href="javascript:void(0)">
@@ -580,28 +453,5 @@
     </a>
     <!-- END Scroll-To-Top -->
 
-    <!-- Global Required JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Vendor/Plugins JS -->
-    <script src="vendor/slick/slick.min.js"></script>
-    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/wowjs/wow.min.js"></script>
-
-    <!-- Bootbox Template JS -->
-    <script src="js/main.js"></script>
-    <script>
-        // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').then(registration => {
-                  console.log('SW registered: ', registration);
-                }).catch(registrationError => {
-                });
-              });
-           } 
-    </script>
+   
 </body>
-</html>
