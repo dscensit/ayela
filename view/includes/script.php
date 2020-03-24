@@ -10,11 +10,12 @@
 
     <!-- Bootbox Template JS -->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="sw.js"></script>
     <script>
         // Check that service workers are supported
             if ('serviceWorker' in navigator) {
               window.addEventListener('load', () => {
-                navigator.serviceWorker.register('assets/sw.js').then(registration => {
+                navigator.serviceWorker.register('sw.js').then(registration => {
                   console.log('SW registered: ', registration);
                 }).catch(registrationError => {
                 });
