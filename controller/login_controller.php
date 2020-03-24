@@ -20,9 +20,11 @@
 
                  $val=verifyFieldLength($mdp,7);
 
+
                  if($val==true){
 
- 
+                          $mdp=sha1($mdp);
+
                           $user->Authentification($mail,$mdp);
 
                           $selfverify=$user->returnthebool();

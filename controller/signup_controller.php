@@ -33,7 +33,8 @@
             
                                               
 
-
+                                               $mdp=sha1($mdp);
+                                               
                                                $utilisateur->createUser($pseudo,$mdp,$mail);
 
 
