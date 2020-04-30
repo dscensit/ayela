@@ -1,0 +1,33 @@
+{
+  "name": "AYELA",
+  "short_name": "AYELA",
+  "theme_color": "#6a8be0",
+  "background_color": "#6a8bc4",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "index.php",
+  "icons": [
+    {
+      "src": "assets/img/favicon/Icon-72.png.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/favicon/Icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/favicon/Icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/favicon/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

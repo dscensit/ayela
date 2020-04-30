@@ -1,0 +1,6 @@
+DirectoryIndex user/ 
+RewriteEngine on
+
+RewriteRule ^api/?$user.php [NC,L]
+
+RewriteRule ^[^/]+/(\d+)$ user.php?id=$1
