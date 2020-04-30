@@ -7,7 +7,10 @@
 
 <?php 
 
+                       include_once '__function/Generate.php';
                        include_once '__classes/user.php';
+
+                       include_once '__classes/find.php';
                        
                        include_once '__classes/point.php' ;
 
@@ -16,6 +19,8 @@
                        include_once 'view/includes/head.php'; 
 
                        include_once '__function/title.php';
+
+                       
 
 
                         $redirect=new redirect();

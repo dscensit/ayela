@@ -1,6 +1,6 @@
 <body id="page-top">
 
-    <!-- START Loader 
+   
     <div id="preloader">
         <div class="blobs">
             <div class="blob-center"></div>
@@ -12,7 +12,7 @@
             <div class="blob"></div>
         </div>
     </div>
-     END Loader -->
+   
      <header class="header position-relative">
         <!-- START Navigation -->
         <div class="navigation-bar" id="affix">
@@ -280,7 +280,7 @@
                             </span>
                         </div>
                         <div class="team-content">
-                            <h5 class="mb-2">Philipe KOUA</h5>
+                            <h5 class="mb-2">Wilfried KOUA</h5>
                             <p class="text-uppercase mb-0">Responsable Back-End</p>
                         </div>
                     </div>

@@ -20,10 +20,10 @@
                                 <a class="nav-link" href="annonce">Annonce</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="perdu">Perdu</a>
+                                <a class="nav-link" href="perdu">Retrouvé</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="find">Retrouvé</a>
+                                <a class="nav-link" href="find">Perdu</a>
                             </li>
                         </ul>
                         <div class="my-3 my-lg-0">

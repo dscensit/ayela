@@ -84,19 +84,26 @@
                             </div>
                         </form>
 
+                        <?php if(isset($all["count"])): ?>
                         <div class="filter-result">
-                            <p class="mb-30 ff-montserrat">Annonce Total : 89</p>
+                            <p class="mb-30 ff-montserrat">Annonce Total : <?= $all["count"] ?></p>
+                            <?php foreach ($all["data"] as $data ):
+                                # code..
+                            ?>
+                            
                             <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
                                 <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
-                                    <div class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">BD</div>
+                                    <div class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">
+                                      
+                                    </div>
                                     <div class="job-content">
-                                        <h5 class="text-center text-md-left">Bada Daniel</h5>
+                                        <h5 class="text-center text-md-left"><?= $data->nom."  ".$data->prenom ?></h5>
                                         <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
                                             <li class="mr-md-4">
-                                                <i class="zmdi zmdi-pin mr-2"></i> Cocody
+                                                <i class="zmdi zmdi-pin mr-2"></i> <?= $data->commune?>
                                             </li>
                                             <li class="mr-md-4">
-                                                <i class="zmdi zmdi-file-text mr-2"></i> Carte d'identité
+                                                <i class="zmdi zmdi-file-text mr-2"></i><?= $data->type_document?>
                                             </li>
                                             <li class="mr-md-4">
                                                 <div class="btn-group align-content-center" role="group" aria-label="Bouton partager">
@@ -109,113 +116,20 @@
                                     </div>
                                 </div>
                                 <div class="job-right my-4 flex-shrink-0">
-                                    <a href="document" class="btn d-block w-100 d-sm-inline-block btn-custom">Détails</a>
+                                    <a href="document?id=<?= $data->numero_document?>" class="btn d-block w-100 d-sm-inline-block btn-custom">Détails</a>
                                 </div>
                             </div>
-                            <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
-                                <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
-                                    <div class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">BD</div>
-                                    <div class="job-content">
-                                        <h5 class="text-center text-md-left">Bada Daniel</h5>
-                                        <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-pin mr-2"></i> Cocody
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-file-text mr-2"></i> Carte d'identité
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <div class="btn-group align-content-center" role="group" aria-label="Bouton partager">
-                                                    <button type="button" class="btn button-fb btn-rounded"><i class="zmdi zmdi-facebook zmdi-hc-4x"></i></button>
-                                                    <button type="button" class="btn button-tw btn-rounded"><i class="zmdi zmdi-twitter"></i></button>
-                                                    <button type="button" class="btn button-ln btn-rounded"><i class="zmdi zmdi-linkedin"></i></button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="job-right my-4 flex-shrink-0">
-                                    <a href="document" class="btn d-block w-100 d-sm-inline-block btn-custom">Détails</a>
-                                </div>
-                            </div>
-                            <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
-                                <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
-                                    <div class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">BD</div>
-                                    <div class="job-content">
-                                        <h5 class="text-center text-md-left">Bada Daniel</h5>
-                                        <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-pin mr-2"></i> Cocody
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-file-text mr-2"></i> Carte d'identité
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <div class="btn-group align-content-center" role="group" aria-label="Bouton partager">
-                                                    <button type="button" class="btn button-fb btn-rounded"><i class="zmdi zmdi-facebook zmdi-hc-4x"></i></button>
-                                                    <button type="button" class="btn button-tw btn-rounded"><i class="zmdi zmdi-twitter"></i></button>
-                                                    <button type="button" class="btn button-ln btn-rounded"><i class="zmdi zmdi-linkedin"></i></button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="job-right my-4 flex-shrink-0">
-                                    <a href="document" class="btn d-block w-100 d-sm-inline-block btn-custom">Détails</a>
-                                </div>
-                            </div>
-                            <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
-                                <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
-                                    <div class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">BD</div>
-                                    <div class="job-content">
-                                        <h5 class="text-center text-md-left">Bada Daniel</h5>
-                                        <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-pin mr-2"></i> Cocody
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-file-text mr-2"></i> Carte d'identité
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <div class="btn-group align-content-center" role="group" aria-label="Bouton partager">
-                                                    <button type="button" class="btn button-fb btn-rounded"><i class="zmdi zmdi-facebook zmdi-hc-4x"></i></button>
-                                                    <button type="button" class="btn button-tw btn-rounded"><i class="zmdi zmdi-twitter"></i></button>
-                                                    <button type="button" class="btn button-ln btn-rounded"><i class="zmdi zmdi-linkedin"></i></button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="job-right my-4 flex-shrink-0">
-                                    <a href="document" class="btn d-block w-100 d-sm-inline-block btn-custom">Détails</a>
-                                </div>
-                            </div>
-                            <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
-                                <div class="job-left my-4 d-md-flex align-items-center flex-wrap">
-                                    <div class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex">BD</div>
-                                    <div class="job-content">
-                                        <h5 class="text-center text-md-left">Bada Daniel</h5>
-                                        <ul class="d-md-flex flex-wrap text-capitalize ff-open-sans">
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-pin mr-2"></i> Cocody
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <i class="zmdi zmdi-file-text mr-2"></i> Carte d'identité
-                                            </li>
-                                            <li class="mr-md-4">
-                                                <div class="btn-group align-content-center" role="group" aria-label="Bouton partager">
-                                                    <button type="button" class="btn button-fb btn-rounded"><i class="zmdi zmdi-facebook zmdi-hc-4x"></i></button>
-                                                    <button type="button" class="btn button-tw btn-rounded"><i class="zmdi zmdi-twitter"></i></button>
-                                                    <button type="button" class="btn button-ln btn-rounded"><i class="zmdi zmdi-linkedin"></i></button>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="job-right my-4 flex-shrink-0">
-                                    <a href="document" class="btn d-block w-100 d-sm-inline-block btn-custom">Détails</a>
-                                </div>
-                            </div>
+
+                            <?php 
+                             
+                              endforeach;
+                            ?>
+
+                        <?php endif; ?>
+                            
+                            
+                               
+                            
                             
                     <!-- START Pagination -->
                     <nav aria-label="Page navigation">

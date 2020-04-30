@@ -1,6 +1,6 @@
 
 <body id="page-top">
-    <!-- START Loader 
+  
     <div id="preloader">
         <div class="blobs">
             <div class="blob-center"></div>
@@ -12,7 +12,7 @@
             <div class="blob"></div>
         </div>
     </div>
-     END Loader -->
+  
 
     
 
@@ -21,10 +21,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="text-uppercase mb-4 c-white">Documents rétouvés</h2>
+                    <h2 class="text-uppercase mb-4 c-white">Documents perdu</h2>
                     <ul class="breadcrumb mb-0 justify-content-center">
                         <li class="breadcrumb-item"><a href="home">Acceuil</a></li>
-                        <li class="breadcrumb-item active">Documents rétouvés </li>
+                        <li class="breadcrumb-item active">Documents perdu </li>
                     </ul>
                 </div>
             </div>
@@ -39,20 +39,32 @@
                 <strong>Soumettre</strong>
               </h5>
               <!-- Form -->
-          <form class="text-center" style="color: #757575;" action="#!">
+            <?php if(isset($error) and $error!=""):
+
+           ?>
+            <br>
+
+            <div class="alert alert-dark">
+
+               <?= $error ?>
+            
+            </div>
+        
+            <?php  endif; ?>
+          <form class="text-center" style="color: #757575;" action="#!" method="post" enctype="multipart/form-data">
 
             <div class="form-row">
                 <div class="col">
                     <!-- First name -->
                     <div class="md-form">
-                        <input type="text" id="materialRegisterFormFirstName" class="form-control" required>
+                        <input type="text" id="materialRegisterFormFirstName" name="nom" class="form-control" required>
                         <label for="materialRegisterFormFirstName">Nom*</label>
                     </div>
                 </div>
                 <div class="col">
                     <!-- Last name -->
                     <div class="md-form">
-                        <input type="text" id="materialRegisterFormLastName" class="form-control" required>
+                        <input type="text" id="materialRegisterFormLastName" name="prenom" class="form-control" required>
                         <label for="materialRegisterFormLastName">Prénoms*</label>
                     </div>
                 </div>
@@ -60,20 +72,20 @@
             <div class="col">
              <div class="md-form mt-0">
               <span>Type du document</span>
-              <select class="mdb-select" required>
+              <select class="mdb-select" required name="type">
                   <option value="" disabled></option>
-                  <option value="1" selected>Carte d'identité</option>
-                  <option value="2">Permis</option>
-                  <option value="3">Acte de naissance</option>
-                  <option value="4">Passeport</option>
-                  <option value="5">Autres</option>
+                  <option value="carte d'identité" selected>Carte d'identité</option>
+                  <option value="permis">Permis</option>
+                  <option value="Acte de naissance">Acte de naissance</option>
+                  <option value="Passeport">Passeport</option>
+                  <option value="Autres">Autres</option>
               </select>
   
             </div>
             </div>
             <!-- Numéro du document -->
             <div class="md-form mt-0">
-                <input type="text" id="materialRegisterFormIDdoc" class="form-control" required>
+                <input type="text" id="materialRegisterFormIDdoc"  name="numero" class="form-control" required>
                 <label for="materialRegisterFormIDdoc">Numéro du document*</label>
             </div>
   
@@ -82,7 +94,7 @@
                   <div class="d-flex justify-content-center">
                     <div class="btn btn-mdb-color btn-rounded float-left">
                       <span>Photo du document</span>
-                      <input type="file">
+                      <input type="file" name="fichier">
                     </div>
                   </div>
                 </div>
@@ -92,14 +104,14 @@
               <div class="col">
                   <!-- Phone -->
                   <div class="md-form">
-                      <input type="number" id="materialRegisterFormFirstPhone" class="form-control" required>
+                      <input type="text" id="materialRegisterFormFirstPhone" name="telephone" class="form-control" required>
                       <label for="materialRegisterFormFirstPhone">Téléphone*</label>
                   </div>
               </div>
               <div class="col">
                   <!-- Whatsapp -->
                   <div class="md-form">
-                      <input type="number" id="materialRegisterFormLastWhatsapp" class="form-control">
+                      <input type="text" name="whatsapp" id="materialRegisterFormLastWhatsapp" class="form-control">
                       <label for="materialRegisterFormLastWhatsapp">Whatsapp</label>
                   </div>
               </div>
@@ -108,14 +120,14 @@
             <div class="col">
                 <!-- Commune -->
                 <div class="md-form">
-                    <input type="text" id="materialRegisterFormFirstCommune" class="form-control" required>
+                    <input type="text" name="commune" id="materialRegisterFormFirstCommune" class="form-control" required>
                     <label for="materialRegisterFormFirstCommune">Commune*</label>
                 </div>
             </div>
             <div class="col">
                 <!-- Lieu -->
                 <div class="md-form">
-                    <input type="text" id="materialRegisterFormLieu" class="form-control">
+                    <input type="text" name="lieu" id="materialRegisterFormLieu" class="form-control">
                     <label for="materialRegisterFormLieu">Lieu</label>
                 </div>
             </div>
@@ -131,7 +143,7 @@
             <div class="row">
                 <div class="col-sm"></div>
                 <div class="col-sm">
-                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Soumettre</button>
+                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" name="button">Soumettre</button>
                 </div>
                 <div class="col-sm"></div>
               </div>

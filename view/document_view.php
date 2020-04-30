@@ -1,7 +1,7 @@
 
 <body id="page-top">
 
-    <!-- START Loader 
+    
     <div id="preloader">
         <div class="blobs">
             <div class="blob-center"></div>
@@ -13,12 +13,18 @@
             <div class="blob"></div>
         </div>
     </div>
-    END Loader -->
+ 
 
    
     <!-- END Header -->
 
     <!-- START Section Page Title -->
+    <?php 
+
+       if(isset($data)):
+
+    ?>
+
     <section class="breadcrumb-section">
         <div class="container">
             <div class="row">
@@ -50,19 +56,17 @@
                         <div class="overview-bottom job-detail text-center">
                             <ul class="ff-open-sans mx-3 mx-xl-5 text-left">
                                 <li>
-                                    <div class="nom-du-proprietaire">Nom: BADA Daniel</div>
+                                    <div class="nom-du-proprietaire">Nom: <?= $data->nom."  ".$data->prenom?></div>
                                 </li>
                                 <li>
-                                    <i class="zmdi zmdi-pin zmdi-hc-fw mr-2"></i>Cocody, Saint Jean
+                                    <i class="zmdi zmdi-pin zmdi-hc-fw mr-2"></i><?= $data->commune.",".$data->lieu ?>
                                 </li>
                                 <li>
-                                    <i class="zmdi zmdi-file-text zmdi-hc-fw mr-2"></i>Carte d'identité
+                                    <i class="zmdi zmdi-file-text zmdi-hc-fw mr-2"></i><?= $data->type_document?>
                                 </li>
+
                                 <li>
-                                    <i class="zmdi zmdi-cake zmdi-hc-fw mr-2"></i>16/08/1995
-                                </li>
-                                <li>
-                                    <i class="zmdi zmdi-phone zmdi-hc-fw mr-2"></i>+225 00 00 00 00
+                                    <i  class="zmdi zmdi-phone zmdi-hc-fw mr-2"></i> <a href="tel:<?=$data->telephone?>"><?= $data->telephone?></a>
                                 </li>
                             </ul>
                             <a href="#" class="btn btn-lg btn-block btn-custom">Récupérer</a>
@@ -88,11 +92,12 @@
                             <h4 class="top-sep mb-30">Image du document</h4>
                         </div>
                         <div>
-                            <img class="image-document" src="assets/img/pages/carte-didentité-ci.jpg" alt="">
+                            <img class="image-document" src="<?="images/".$data->photo ?>" alt="" width="400" height="400   ">
                         </div>
                     </div>
                 </div>
                 <!-- END Left Side-->
+               <?php endif; ?>
             </div>
         </div>
     </section>

@@ -26,14 +26,14 @@ define("PATH_REQUIRE", substr($_SERVER['SCRIPT_FILENAME'], 0, -9)); // Pour fonc
 define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // Pour images, fichiers etc (html)
 
 // Website informations
-define("WEBSITE_TITLE", "Mon site");
-define("WEBSITE_NAME", "Mon site");
-define("WEBSITE_URL", "https://monsite.com");
-define("WEBSITE_DESCRIPTION", "Description du site");
-define("WEBSITE_KEYWORDS", "");
-define("WEBSITE_LANGUAGE", "");
-define("WEBSITE_AUTHOR", "");
-define("WEBSITE_AUTHOR_MAIL", "");
+define("WEBSITE_TITLE", "AYELA");
+define("WEBSITE_NAME", "AYELA");
+define("WEBSITE_URL", "https://ayela-81f9a.web.app");
+define("WEBSITE_DESCRIPTION", "Service gratuit pour retrouver document perdu. Que vous ayez perdu votre Attestation, votre CNI, votre Passeport et votre Assurance.");
+define("WEBSITE_KEYWORDS", "ayela,catre d'identité, perte de document, permis de conduite, carte cni");
+define("WEBSITE_LANGUAGE", "fr");
+define("WEBSITE_AUTHOR", "DSC ENSIT");
+define("WEBSITE_AUTHOR_MAIL", "dscensit@gmail.com");
 
 // Facebook Open Graph tags
 define("WEBSITE_FACEBOOK_NAME", "");
