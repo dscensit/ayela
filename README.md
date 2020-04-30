@@ -1,4 +1,4 @@
-![DSC ENSIT Logo](public/img/DSC_ENSIT_Logo.png)
+![DSC ENSIT Logo](assets/img/DSC_ENSIT_Logo.png)
 
 # AYELA project
 This is the official project AYELA of DSC ENSIT realize with HTML, CSS, JavaScript, bootstrap
